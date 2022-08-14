@@ -77,3 +77,37 @@ Dans cet partie on va voir les differente section
 - Secrets utilities: access secret values 
 - Library utilities: pour installer des package dans le scope du notebook ( deprecated on utilise a ça place %pip )
 
+### Utiliser les enfants et les executer dans le notebook principale
+
+```python
+dbutils.widgets.text('input', "Empty", "Send the parameter value")
+input_val = dbutils.widgets.get('input')
+print(input_val)
+```
+- sans oublier d'envoyer le code de exit sinon le programme continue a tourner en attendant le timeout
+
+```python
+dbutils.notebook.exit(100)
+```
+
+- et dans le fichier principale il faudra lancer 
+
+```python
+dbutils.notebook.run('./databricks_child', 10, {'input': "Called from main notebook"})
+```
+- On a envoyer la variable input qui sera utiliser dans le widget text 
+
+- On peut installer des modules avec la commande ```%pip install pandas```
+
+# Databrick mount
+![](2022-08-14-16-32-32.png)
+
+## Databricks file system
+
+![](2022-08-14-16-33-55.png)
+
+### Benefits
+- Access data without requiring credentials
+- Access files using file semantics rather than storage URLs (e.g. /mnt/storage1)
+- Stores files to object storage (e.g. Azure Blob), so you get all the benefits from Azure
+- the defaut DBFS is called root 
