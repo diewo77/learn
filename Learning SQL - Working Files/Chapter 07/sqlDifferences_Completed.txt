@@ -1,0 +1,12 @@
+;
+DATA TYPES
+DELIMITERS [ ] - ' ' - " "
+FUNCTIONS
+
+Getting the Date:
+getDate()
+date()
+currentDate()
+curDate()
+sysdate
+

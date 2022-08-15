@@ -1,0 +1,8 @@
+DELETE FROM 	tablename
+WHERE		any criteria to filter records
+
+
+----
+
+TRUNCATE TABLE 	tablename
+

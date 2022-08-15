@@ -1,0 +1,29 @@
+select c.fn as FirstName, c.sn as Lastname, 
+c.town, c.dateofbirth as DOB, floor(convert(int,(getdate()-dateofbirth))/365.25) as Age 
+from tblcontacts C
+inner join tblgender G
+on G.genderid=C.gender
+inner join tblMaritalStatus M
+on M.maritalstatusid = C.maritalstatus
+where country='USA'
+
+
+
+
+
+
+
+
+
+---------------------------
+
+select c.fn as FirstName, c.sn as Lastname, 
+c.town, c.dateofbirth as DOB, floor(convert(int,(getdate()-dateofbirth))/365.25) as Age ,
+G.gender as Gender,
+M.maritalstatus as MStatus
+from tblcontacts C
+inner join tblgender G
+on G.genderid=C.gender
+inner join tblMaritalStatus M
+on M.maritalstatusid = C.maritalstatus
+where country='USA'

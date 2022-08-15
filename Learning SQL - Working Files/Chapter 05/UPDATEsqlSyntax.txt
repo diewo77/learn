@@ -1,0 +1,3 @@
+UPDATE      	tablename
+SET		fieldname = new value , f2=new value
+WHERE		any criteria

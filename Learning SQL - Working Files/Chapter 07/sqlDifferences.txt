@@ -1,0 +1,7 @@
+;
+DATA TYPES
+DELIMITERS
+FUNCTIONS
+
+Getting the Date:
+

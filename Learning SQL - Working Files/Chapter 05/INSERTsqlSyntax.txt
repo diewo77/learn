@@ -1,0 +1,4 @@
+INSERT INTO 	tablename( column names )
+VALUES		(values)
+
+THERE MUST BE ONE VALUE FOR EACH COLUMN LISTED	

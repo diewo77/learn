@@ -1,0 +1,21 @@
+
+create table tblContact(contactid int identity , contactPerson number, contactDate date, contactdetails longtext);
+
+
+
+
+insert into tblcontact(contactperson, contactDate, contactdetails) Values(4,'2014-06-08','We rang them');
+insert into tblcontact(contactperson, contactDate, contactdetails) Values(3,'2014-06-15','We Emailed them');
+insert into tblcontact(contactperson, contactDate, contactdetails) Values(7,'2014-06-19','We went round and called on them');
+insert into tblcontact(contactperson, contactDate, contactdetails) Values(9,'2014-06-23','We gave up on them');
+
+
+
+select * from tblcontact;
+
+
+
+
+alter table tblcontact add contactCat int;
+
+update tblcontact set contactCat =3;
