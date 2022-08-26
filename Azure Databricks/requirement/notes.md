@@ -106,6 +106,10 @@ dbutils.notebook.run('./databricks_child', 10, {'input': "Called from main noteb
 
 ![](2022-08-14-16-33-55.png)
 
+![](2022-08-14-16-38-26.png)
+
+
+
 ### Benefits
 - Access data without requiring credentials
 - Access files using file semantics rather than storage URLs (e.g. /mnt/storage1)
